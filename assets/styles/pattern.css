@@ -17,7 +17,7 @@ h2 {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1246px;
   margin: 0 auto;
   padding: 0rem 1.5rem;
 }
@@ -28,7 +28,7 @@ h2 {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  padding: 1.2rem 2.7rem;
+  padding: 1.4rem 3rem;
   border-radius: 2.6rem;
   transition: all 0.2s;
 }

@@ -5,12 +5,17 @@ header {
   left: 0;
   width: 100%;
   padding: 4rem 0rem;
-  z-index: 2021;
+  z-index: 25;
+  display: flex;
+}
+#logo {
+  margin-right: 3rem;
 }
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .header-nav li {
   font-size: 1.6rem;
@@ -49,6 +54,8 @@ header .container {
 }
 header .btn-header {
   background: var(--primary-color);
+  text-transform: uppercase;
+  color: var(--black-color);
 }
 header li .btn-header {
   color: var(--black-color);
@@ -91,7 +98,7 @@ header li .btn-header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 59.2rem;
+  max-width: 62rem;
   margin-top: 25rem;
   padding-bottom: 6rem;
 }
@@ -146,7 +153,7 @@ header li .btn-header {
 /* Success Section =========* */
 
 .success {
-  color: white;
+  color: var(--white-color);
   padding: 4rem 2rem;
 }
 .chama {
@@ -160,7 +167,6 @@ header li .btn-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -170,8 +176,8 @@ header li .btn-header {
   flex-direction: column;
   justify-content: space-around;
   height: 30rem;
-  padding: 4rem;
-  margin-right: 3rem;
+  padding: 2rem;
+  margin-right: 2.5rem;
   width: 32rem;
   transition: all 0.2s;
 }
@@ -215,7 +221,7 @@ header li .btn-header {
 
 /* About Section =========* */
 .about {
-  background-color: #0c0c0c;
+  background-color: var(--semi-black);
   margin-top: 4rem;
 }
 .about .container {
@@ -226,6 +232,7 @@ header li .btn-header {
 }
 .about-content {
   flex: 2;
+  padding: 4rem 2rem;
 }
 
 .about-img {

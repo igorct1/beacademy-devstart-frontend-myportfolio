@@ -1,0 +1,137 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  html {
+    font-size: 58%;
+  }
+  .hero {
+    height: 90vh;
+  }
+}
+@media (max-width: 1052px) {
+  .container {
+    max-width: 1052px;
+  }
+  .wrapper,
+  .about .container {
+    flex-wrap: wrap;
+  }
+  .wrapper div {
+    margin-top: 3rem;
+    flex: 1 0 30rem;
+  }
+}
+@media (max-width: 969px) {
+  .container {
+    max-width: 969px;
+  }
+  .about .container,
+  .contact .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact .container {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .form-contact {
+    flex: 1;
+  }
+  .input-group {
+    flex: 1;
+  }
+  .contact .input-button {
+    text-align: left;
+  }
+  .about-img {
+    padding: 2rem;
+  }
+  .about-content {
+    padding: 6rem 2rem;
+  }
+  .cases-section {
+    padding: 4rem 2rem;
+  }
+  .cases {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .cases .case {
+    position: static;
+    margin-top: 3rem;
+  }
+  .cases .case a {
+    flex: 1 0 70rem;
+  }
+  .cases .case:first-child {
+    position: static;
+  }
+  .cases .case:nth-child(2) {
+    position: static;
+  }
+
+  .cases .case:last-child {
+    position: static;
+  }
+  .cases a img {
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 0.4rem;
+  }
+  .cases a img:hover {
+    transform: translateY(-2%);
+  }
+  .cases-title {
+    padding: 6rem 0rem;
+  }
+}
+@media (max-width: 801px) {
+  .header-nav {
+    padding: 5rem 0rem;
+  }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-nav a {
+    margin-right: 1.4rem;
+  }
+  .btn-header {
+    order: 3;
+  }
+  .hero {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 48%;
+  }
+  .hero {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 461px) {
+  .hero {
+    height: 80vh;
+  }
+  html {
+    font-size: 48%;
+  }
+  .header-nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-header {
+    margin-top: 3rem;
+  }
+}
