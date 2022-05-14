@@ -81,7 +81,6 @@ header li .btn-header {
     url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   background-position: center center;
 }
 
@@ -154,6 +153,7 @@ header li .btn-header {
 .success {
   color: var(--white-color);
   padding: 4rem 2rem;
+  margin-top: 4rem;
 }
 .chama {
   background: var(--white-color);

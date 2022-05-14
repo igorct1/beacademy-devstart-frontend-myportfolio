@@ -5,9 +5,7 @@
   html {
     font-size: 58%;
   }
-  .hero {
-    height: 90vh;
-  }
+
   .hero .container .hero-title {
     margin-top: 20rem;
   }
@@ -132,9 +130,6 @@
 }
 
 @media (max-width: 466px) {
-  .hero {
-    height: 100vh;
-  }
   html {
     font-size: 48%;
   }
