@@ -46,6 +46,7 @@ header li .btn-header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  background-position: center center;
 }
 
 .hero .container {
@@ -61,7 +62,7 @@ header li .btn-header {
   align-items: center;
   width: 100%;
   max-width: 59.2rem;
-  margin-top: 23rem;
+  margin-top: 27rem;
   padding-bottom: 6rem;
 }
 
@@ -110,4 +111,66 @@ header li .btn-header {
   color: var(--primary-color);
   margin-top: 4rem;
   padding: 1.2rem 3.6rem;
+}
+/* Success Section =========* */
+
+.success {
+  color: white;
+  padding: 4rem 2rem;
+}
+.chama {
+  background: var(--white-color);
+  width: 13rem;
+  border-radius: 5rem;
+  padding: 1.2rem;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  color: var(--black-color);
+  background: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30rem;
+  padding: 4rem;
+  margin-right: 3rem;
+  width: 32rem;
+}
+.black {
+  background-color: var(--black-color);
+  padding: 0rem;
+}
+.black h3 {
+  color: var(--white-color);
+}
+.yellow {
+  background: var(--primary-color);
+}
+.card h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 77px;
+}
+.card.black h3 {
+  font-weight: 800;
+}
+.card h3 span {
+  color: var(--primary-color);
+}
+
+.card h4 {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Inter";
 }
