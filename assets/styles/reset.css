@@ -23,3 +23,18 @@ button {
 body {
   background-color: var(--black-color);
 }
+
+main h2,
+footer h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+main h2 span,
+footer h2 span {
+  color: var(--primary-color);
+}

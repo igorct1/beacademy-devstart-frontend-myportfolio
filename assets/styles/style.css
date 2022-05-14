@@ -62,7 +62,7 @@ header li .btn-header {
   align-items: center;
   width: 100%;
   max-width: 59.2rem;
-  margin-top: 27rem;
+  margin-top: 25rem;
   padding-bottom: 6rem;
 }
 
@@ -173,4 +173,49 @@ header li .btn-header {
   font-weight: 300;
   font-style: normal;
   font-family: "Inter";
+}
+
+/* About Section =========* */
+.about {
+  background-color: #0c0c0c;
+  margin-top: 4rem;
+}
+.about .container {
+  display: flex;
+  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.about-content {
+  flex: 2;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 70rem;
+  padding: 2.4rem 0rem;
+  color: var(--white-color);
+}
+.about-social {
+  display: flex;
+}
+
+.about-social img {
+  margin-right: 2rem;
+}
+
+/* Cases Section =========* */
+
+.cases {
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem 2rem;
 }
