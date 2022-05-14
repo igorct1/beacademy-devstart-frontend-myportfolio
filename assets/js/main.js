@@ -21,3 +21,23 @@ function initScrollSuave() {
 }
 
 initScrollSuave();
+//Mostrar o elemento quando der scroll na página */
+
+const scrollReveal = ScrollReveal({
+  origin: "top",
+  distance: "30px",
+  duration: 700,
+  reset: true,
+});
+
+scrollReveal.reveal(
+  `
+.hero,
+.wrapper,
+.about,
+.cases-section,
+.success,
+.contact,
+.footer`,
+  { interval: 100 }
+);
