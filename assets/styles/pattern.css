@@ -30,4 +30,9 @@ h2 {
   line-height: 2.4rem;
   padding: 1.2rem 2.7rem;
   border-radius: 2.6rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
