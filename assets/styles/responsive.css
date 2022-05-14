@@ -8,6 +8,9 @@
   .hero {
     height: 90vh;
   }
+  .hero .container .hero-title {
+    margin-top: 20rem;
+  }
 }
 @media (max-width: 1052px) {
   .container {
@@ -23,6 +26,9 @@
   }
 }
 @media (max-width: 969px) {
+  .hero .container .hero-title {
+    margin-top: 15rem;
+  }
   .container {
     max-width: 969px;
   }
