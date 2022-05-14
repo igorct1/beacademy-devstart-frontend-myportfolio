@@ -1,0 +1,41 @@
+/* Header =========* */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 0rem;
+    z-index: 2021;
+  }
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.header-menu li {
+    margin-right: 4.8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.header-menu li a {
+    color: var(--primary-color);
+}
+header .btn-header {
+    background: var(--primary-color);
+}
+header li .btn-header  {
+    color: var(--black-color);
+}

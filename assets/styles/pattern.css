@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #dcf64b;
+  --second-color: #a0b435;
+  --black-color: #000000;
+  --black-color-medium: #0c0c0c;
+  --semi-black: #1e1e1e;
+  --white-color: #ffffff;
+}
+
+h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 2.7rem;
+  border-radius: 2.6rem;
+}
