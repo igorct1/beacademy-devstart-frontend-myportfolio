@@ -107,7 +107,7 @@
     padding: 6rem 0rem;
   }
 }
-@media (max-width: 801px) {
+@media (max-width: 828px) {
   .header-nav {
     display: flex;
     padding: 5rem 0rem;
