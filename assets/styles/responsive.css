@@ -5,6 +5,18 @@
   html {
     font-size: 58%;
   }
+  h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5.4rem;
+    line-height: 77px;
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+  h2 span {
+    color: var(--primary-color);
+  }
 
   .hero .container .hero-title {
     margin-top: 20rem;
@@ -121,6 +133,9 @@
     display: none;
     overflow: hidden;
   }
+  .cases-title {
+    padding: 3rem 0rem;
+  }
 }
 
 @media (max-width: 556px) {
@@ -134,7 +149,7 @@
 
 @media (max-width: 466px) {
   html {
-    font-size: 48%;
+    font-size: 42%;
   }
   .header-nav {
     justify-content: center;

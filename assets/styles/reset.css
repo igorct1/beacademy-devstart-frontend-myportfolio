@@ -25,8 +25,7 @@ body {
   overflow-x: hidden;
 }
 
-main h2,
-footer h2 {
+h2 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
@@ -35,7 +34,6 @@ footer h2 {
   color: var(--white-color);
   text-transform: uppercase;
 }
-main h2 span,
-footer h2 span {
+h2 span {
   color: var(--primary-color);
 }

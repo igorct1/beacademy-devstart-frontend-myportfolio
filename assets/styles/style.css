@@ -182,10 +182,9 @@ header li .btn-header {
 }
 .card:hover {
   transform: scale(1.04);
-}
-.card:hover {
   opacity: 0.8;
 }
+
 .black {
   background-color: var(--black-color);
   padding: 0rem;
@@ -285,6 +284,7 @@ header li .btn-header {
   position: absolute;
   top: 0;
   left: 4px;
+  opacity: 0.9;
 }
 .cases .case:nth-child(2) {
   position: absolute;
@@ -297,17 +297,41 @@ header li .btn-header {
   position: absolute;
   top: 0;
   left: 700px;
+  opacity: 0.9;
 }
 .cases a img {
-  transition: all 0.2s;
+  transition: all 0.5s;
   cursor: pointer;
   border-radius: 0.4rem;
 }
 .cases a img:hover {
-  transform: translateY(-2%);
+  transform: translateY(-3%);
 }
 .cases-title {
   padding: 6rem 0rem;
+}
+.cases .case:first-child:hover,
+.cases .case:last-child:hover {
+  z-index: 2;
+  opacity: 1;
+}
+
+.cases-section .github {
+  padding: 1.4rem;
+  font-size: 2.4rem;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+}
+.cases-section .github a {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  transition: 0.2s all;
+}
+
+.cases-section .github a:hover {
+  transform: scale(1.1);
 }
 
 /* Contact Section =========* */
