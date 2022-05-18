@@ -13,6 +13,7 @@ Projeto realizado para a beAcademy junto com a PayLivre no programa DevStart.
 ## Libs externas
 
 [ScrollRevel 🚀](https://scrollrevealjs.org/)
+[Glider.js 🚀](https://nickpiscitelli.github.io/Glider.js/)
 
 ## UI Design Figma
 
