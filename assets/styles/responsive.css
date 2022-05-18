@@ -134,6 +134,11 @@
   html {
     font-size: 55%;
   }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0rem;
+  }
   .card {
     margin-right: 0rem;
   }
@@ -154,10 +159,16 @@
   }
 }
 @media (max-width: 357px) {
+  html {
+    font-size: 45%;
+  }
   .header-nav ul li {
     margin-right: 1rem;
   }
   .hero .container .hero-title {
     padding-bottom: 10rem;
+  }
+  .empty {
+    padding: 1rem 2.4rem;
   }
 }
