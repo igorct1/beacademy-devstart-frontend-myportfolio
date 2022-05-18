@@ -63,8 +63,7 @@ header .container {
   background-color: var(--black-color);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
 }
 
 .hero .container {
@@ -80,9 +79,8 @@ header .container {
   align-items: center;
   width: 100%;
   max-width: 62rem;
-  margin-top: 28rem;
-  padding-bottom: 8rem;
-  height: 100vh;
+  margin-top: 20rem;
+  padding-bottom: 20rem;
 }
 
 .hero h1 {
@@ -264,6 +262,17 @@ header .container {
 .cases-title {
   padding: 4rem 0rem;
 }
+.cases {
+  max-width: 100%;
+  height: 62rem;
+}
+.cases .card {
+  position: relative;
+}
+
+.js-dots {
+  margin-top: 2rem;
+}
 
 .cases-section .github {
   padding: 1.4rem;
@@ -395,6 +404,10 @@ header .container {
     border: none;
     background: none;
     cursor: pointer;
+  }
+  #nav.active #btnMobile {
+    position: fixed;
+    right: 10px;
   }
   #hamburguer {
     border-top: 2px solid;

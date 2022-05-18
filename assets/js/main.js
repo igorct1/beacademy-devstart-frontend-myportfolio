@@ -1,6 +1,15 @@
 function initScrollSuave() {
   //selecionando o menu
   const menu = document.querySelectorAll(".header-menu li a");
+  //toggle menu ao clicar nos links
+  menu.forEach((link) => {
+    link.addEventListener("click", () => {
+      const nav = document.getElementById("nav");
+      if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+      }
+    });
+  });
   // função do Smooth scroll
   function smoothScroll(e) {
     //previnindo padrão dos links
@@ -57,13 +66,9 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 const carousel = document.querySelector(".js-carousel");
 
 new Glider(carousel, {
-  slidesToShow: 1.1,
+  slidesToShow: 1,
   slidesToScroll: 1,
   draggable: true,
   dots: ".js-dots",
-  arrows: {
-    prev: ".js-button-prev",
-    next: ".js-button-next",
-  },
   scrollLock: true,
 });

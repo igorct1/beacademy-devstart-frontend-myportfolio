@@ -77,36 +77,12 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 4rem 0rem;
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .cases .case {
-    position: static;
-    margin-top: 3rem;
-  }
-  .cases .case a {
-    flex: 1 0 70rem;
-  }
-  .cases .case:first-child {
-    position: static;
-  }
-  .cases .case:nth-child(2) {
-    position: static;
-  }
 
-  .cases .case:last-child {
-    position: static;
-  }
-  .cases a img {
-    transition: all 0.2s;
-    cursor: pointer;
-    border-radius: 0.4rem;
-  }
-  .cases a img:hover {
-    transform: translateY(-2%);
-  }
   .cases-title {
     padding: 6rem 0rem;
   }
@@ -167,9 +143,6 @@
   .hero .container .hero-title {
     margin-top: 20rem;
   }
-  .hero {
-    height: 70vh;
-  }
 }
 @media (max-width: 466px) {
   html {
@@ -183,5 +156,8 @@
 @media (max-width: 357px) {
   .header-nav ul li {
     margin-right: 1rem;
+  }
+  .hero .container .hero-title {
+    padding-bottom: 10rem;
   }
 }
