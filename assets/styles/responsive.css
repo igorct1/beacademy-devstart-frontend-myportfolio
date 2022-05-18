@@ -1,9 +1,6 @@
 @media (max-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
   html {
-    font-size: 58%;
+    font-size: 60%;
   }
   h2 {
     font-family: "Inter";
@@ -19,13 +16,10 @@
   }
 
   .hero .container .hero-title {
-    margin-top: 20rem;
+    margin-top: 28rem;
   }
 }
 @media (max-width: 1052px) {
-  .container {
-    max-width: 1052px;
-  }
   .wrapper,
   .about .container {
     flex-wrap: wrap;
@@ -36,19 +30,22 @@
   }
 }
 @media (max-width: 969px) {
-  .hero .container .hero-title {
-    margin-top: 15rem;
-  }
-  .container {
-    max-width: 969px;
-  }
   .about .container,
   .contact .container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
-  .contact .container {
-    align-items: flex-start;
+
+  .success .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content,
+  .cases-title,
+  .cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
   .form-contact {
@@ -57,17 +54,24 @@
   .input-group {
     flex: 1;
   }
+  .form-contact {
+    width: 100%;
+  }
   .contact .input-button {
-    text-align: left;
+    text-align: center;
+  }
+  .input-button .btn {
+    width: 20rem;
   }
   .about-img {
-    padding: 2rem;
+    padding: 2rem 0rem;
   }
-  .about-content {
-    padding: 6rem 2rem;
+
+  .about-content p {
+    text-align: center;
   }
   .cases-section {
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   }
   .cases {
     display: flex;
@@ -106,29 +110,41 @@
   .cases-title {
     padding: 6rem 0rem;
   }
+
+  .contact-title p {
+    margin: 0 auto;
+  }
+  .contact .contact-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-title h2 {
+    max-width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 828px) {
   .header-nav {
     display: flex;
     padding: 5rem 0rem;
   }
+
   #logo {
     margin-right: 0px;
   }
-  header .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .hero .container .hero-title {
+    margin-top: 20rem;
   }
+
   .header-nav a {
     margin-right: 0px;
   }
   .btn-header {
     order: 3;
   }
-  .hero {
-    margin-top: 10rem;
-  }
+
   header .container .header-social {
     display: none;
     overflow: hidden;
@@ -140,23 +156,30 @@
 
 @media (max-width: 556px) {
   html {
-    font-size: 48%;
+    font-size: 55%;
+  }
+  .card {
+    margin-right: 0rem;
+  }
+  .container {
+    padding: 4rem 2rem;
+  }
+  .hero .container .hero-title {
+    margin-top: 20rem;
   }
   .hero {
-    margin-top: 15rem;
+    height: 70vh;
   }
 }
-
 @media (max-width: 466px) {
   html {
-    font-size: 42%;
+    font-size: 48%;
   }
   .header-nav {
     justify-content: center;
     align-items: center;
   }
 }
-
 @media (max-width: 357px) {
   .header-nav ul li {
     margin-right: 1rem;

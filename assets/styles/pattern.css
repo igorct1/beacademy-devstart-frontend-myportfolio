@@ -1,10 +1,9 @@
 :root {
-  --primary-color: #dcf64b;
-  --second-color: #a0b435;
-  --black-color: #000000;
-  --black-color-medium: #0c0c0c;
-  --semi-black: #1e1e1e;
-  --white-color: #ffffff;
+  --primary-color: #ffc300;
+  --black-color: #000814;
+  --semi-black: #020e20;
+  --semi-black-medium: #003566;
+  --white-color: #f1faee;
 }
 
 h2 {
@@ -19,7 +18,7 @@ h2 {
   width: 100%;
   max-width: 1246px;
   margin: 0 auto;
-  padding: 0rem 1.5rem;
+  padding: 0rem 4rem;
 }
 
 .btn {
@@ -29,10 +28,13 @@ h2 {
   font-size: 1.6rem;
   line-height: 2.4rem;
   padding: 1.4rem 3rem;
-  border-radius: 2.6rem;
+  border-radius: 0.5rem;
   transition: all 0.2s;
 }
 
 .btn:hover {
   transform: scale(1.1);
+}
+#menu li a:hover {
+  transform: scale(1.05);
 }

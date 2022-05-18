@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
     <link rel="stylesheet" href="./assets/styles/reset.css" class="css" />
     <link rel="stylesheet" href="./assets/styles/pattern.css" class="css" />
     <link rel="stylesheet" href="./assets/styles/style.css" class="css" />
@@ -16,32 +20,17 @@
     <title>be.</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div id="logo">
-          <img src="./assets/img/be-logo.svg" alt="Logo da beAcademy" />
+          <p>&lt;I.T&gt;</p>
         </div>
-        <nav class="header-nav">
-          <ul class="header-menu">
+        <nav class="header-nav" id="nav">
+          <button id="btnMobile"><span id="hamburguer"></span></button>
+          <ul class="header-menu" id="menu">
             <li><a href="#about">Quem sou</a></li>
             <li><a href="#cases">Projetos</a></li>
-          </ul>
-          <a class="btn btn-header" href="#contact">😃 orçamento</a>
-          <ul class="header-social">
-            <li>
-              <a
-                target="_blank "
-                href="https://www.linkedin.com/in/igor-tozetti-32b39a208/"
-                ><img src="./assets/img/icon-linkedin.svg" alt="Icone linkedin"
-              /></a>
-            </li>
-            <li>
-              <a target="_blank " href="https://www.instagram.com/igortozetti_/"
-                ><img
-                  src="./assets/img/icon-instagram.svg"
-                  alt="Icone instagram"
-              /></a>
-            </li>
+            <li><a href="#cases">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -50,21 +39,10 @@
       <section class="hero">
         <div class="container">
           <div class="hero-title">
-            <h1>Olá, 👋🏻 Eu sou <br /><span>Igor Tozetti</span>.</h1>
-            <h2>Desenvolvedor Web e entusiasta do mercado de criptomoedas.</h2>
+            <h1>Olá, eu sou <br /><span>Igor Tozetti</span>.</h1>
+            <h2>Desenvolvedor Web & entusiasta do mercado de criptomoedas.</h2>
             <p>Construindo sonhos através de códigos.</p>
-            <div class="techs">
-              <a href="">
-                <img src="./assets/img/html.svg" alt="html" />
-              </a>
-              <a href="">
-                <img src="./assets/img/css.svg" alt="css" />
-              </a>
-              <a href="">
-                <img src="./assets/img/javascript.svg" alt="javascript" />
-              </a>
-            </div>
-            <a href="#projetos" class="btn empty">Veja meus projetos</a>
+            <a href="#projetos" class="btn empty">Quero um orçamento</a>
           </div>
         </div>
       </section>
@@ -132,13 +110,13 @@
           <div class="cases-title">
             <h2>Projetos<span>.</span></h2>
           </div>
-          <div class="cases">
+          <div class="cases js-carousel">
             <div class="case">
               <a
                 title="Projeto para controle de finanças, clique para conhecer."
                 target="_blank"
                 href="https://github.com/igorct1/dev.finace-"
-                ><img src="./assets/img/image1.png" alt="projeto 1"
+                ><img src="./assets/img/image1-grande.png" alt="projeto 1"
               /></a>
             </div>
             <div class="case">
@@ -146,7 +124,7 @@
                 title="Projeto de estudo, design by Rocketseat."
                 target="_blank"
                 href="https://github.com/igorct1/rocket-nfts"
-                ><img src="./assets/img/image2.png" alt="projeto2"
+                ><img src="./assets/img/image2-grande.png" alt="projeto2"
               /></a>
             </div>
             <div class="case">
@@ -154,10 +132,12 @@
                 title="Projeto de estudo, Todo-list."
                 target="_blank"
                 href="https://github.com/igorct1/todo-list-js"
-                ><img src="./assets/img/image3.png" alt="projeto3"
+                ><img src="./assets/img/image3-grande.png" alt="projeto3"
               /></a>
             </div>
           </div>
+
+          <div class="js-dots" role="tablist"></div>
         </div>
         <div class="github">
           <a target="_blank" href="https://github.com/igorct1"
@@ -168,7 +148,7 @@
       <section class="contact js-smooth" id="contact">
         <div class="container">
           <div class="contact-title">
-            <h2>Entre em <br />contato<span>.</span></h2>
+            <h2>Entre em contato<span>.</span></h2>
             <p>#EVaaaaamosnessa! 🚀</p>
           </div>
           <form class="form-contact" method="post" action="">
@@ -178,7 +158,6 @@
             <div class="input-group">
               <input type="text" placeholder="Preencha seu email" required />
             </div>
-
             <div class="input-group">
               <textarea rows="6" placeholder="Deixe sua mensagem"></textarea>
             </div>
@@ -196,6 +175,7 @@
       </p>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

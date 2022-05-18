@@ -5,10 +5,20 @@ header {
   left: 0;
   width: 100%;
   z-index: 25;
+}
+header .container {
   display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4em;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #logo {
   margin-right: 3rem;
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  font-family: "Inter";
 }
 .header-nav {
   display: flex;
@@ -25,6 +35,7 @@ header {
 }
 .header-nav ul li a:hover {
   color: var(--white-color);
+  opacity: 0.9;
 }
 .header-nav ul li a {
   display: flex;
@@ -44,44 +55,16 @@ header {
   display: flex;
   align-items: center;
 }
-header .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-header .btn-header {
-  background: var(--primary-color);
-  text-transform: uppercase;
-  color: var(--black-color);
-}
-header li .btn-header {
-  color: var(--black-color);
-}
-.btn.btn-header:hover {
-  background: var(--white-color);
-}
-.techs a img {
-  transition: all 0.2s;
-}
-.techs a img:hover {
-  transform: translateY(-10%);
-}
-
-.btn.empty:hover {
-  background: var(--white-color);
-  color: var(--black-color);
-  border: 1px solid var(--semi-black);
-}
 
 /* Hero Section =========* */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 100)),
-    url(../img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 100)),
+    url(../img/background.png);
+  background-color: var(--black-color);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero .container {
@@ -97,31 +80,34 @@ header li .btn-header {
   align-items: center;
   width: 100%;
   max-width: 62rem;
-  margin-top: 24rem;
-  padding-bottom: 6rem;
+  margin-top: 28rem;
+  padding-bottom: 8rem;
+  height: 100vh;
 }
 
 .hero h1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 6.4rem;
-  line-height: 7rem;
+  font-size: 2.8rem;
+  line-height: 5.2rem;
   text-align: center;
   color: var(--white-color);
 }
 .hero h1 span {
   color: var(--primary-color);
+  font-size: 4.8rem;
 }
 .hero h2 {
   font-family: "Poppins";
   color: rgba(255, 255, 255, 0.8);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   line-height: 3.6rem;
   font-style: normal;
   text-align: center;
   font-weight: 400;
   margin-top: 2.4rem;
+  text-transform: none;
 }
 .hero p {
   font-family: "Poppins";
@@ -134,26 +120,31 @@ header li .btn-header {
   margin-top: 3.2rem;
 }
 
-.techs {
-  display: flex;
-  margin-top: 2.3rem;
-  justify-content: center;
-  align-items: center;
-}
-
 .empty {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  margin-top: 4rem;
+  border: 1px solid var(--semi-black);
+  color: var(--black-color);
+  margin-top: 6rem;
   padding: 1.2rem 3.6rem;
-  transition: all 0.2s;
+  transition: all 0.3s;
+  background: rgb(255, 214, 10);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 214, 10, 1) 18%,
+    rgba(230, 194, 15, 1) 49%,
+    rgba(235, 236, 27, 1) 86%,
+    rgba(240, 237, 20, 1) 100%
+  );
+  text-transform: uppercase;
+}
+.btn.empty:hover {
+  opacity: 0.8;
 }
 /* Success Section =========* */
 
 .success {
   color: var(--white-color);
-  padding: 4rem 2rem;
-  margin-top: 4rem;
+  padding: 6rem 0rem;
+  background: var(--black-color);
 }
 .chama {
   background: var(--white-color);
@@ -167,7 +158,6 @@ header li .btn-header {
   justify-content: space-between;
   align-items: center;
 }
-
 .card {
   color: var(--black-color);
   background: var(--white-color);
@@ -179,7 +169,10 @@ header li .btn-header {
   margin-right: 2.5rem;
   width: 32rem;
   transition: all 0.2s;
+  border-radius: 0.5rem;
+  gap: 2rem;
 }
+
 .card:hover {
   transform: scale(1.04);
   opacity: 0.8;
@@ -194,6 +187,7 @@ header li .btn-header {
 }
 .yellow {
   background: var(--primary-color);
+  color: var(--white-color);
 }
 .card h3 {
   font-family: "Inter";
@@ -220,17 +214,15 @@ header li .btn-header {
 /* About Section =========* */
 .about {
   background-color: var(--semi-black);
-  margin-top: 4rem;
 }
 .about .container {
   display: flex;
-  margin-bottom: 4rem;
   align-items: center;
   justify-content: center;
 }
 .about-content {
   flex: 2;
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
 }
 
 .about-img {
@@ -265,55 +257,12 @@ header li .btn-header {
 }
 
 /* Cases Section =========* */
-.cases-section {
-  padding: 4rem 2rem;
-}
-.cases {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 48rem;
-  padding: 4rem 2rem;
-}
-.cases .case {
-  position: absolute;
-  top: 0;
-  left: 405px;
-}
-.cases .case:first-child {
-  position: absolute;
-  top: 0;
-  left: 4px;
-  opacity: 0.9;
-}
-.cases .case:nth-child(2) {
-  position: absolute;
-  top: -20px;
-  left: 315px;
-  z-index: 1;
-}
 
-.cases .case:last-child {
-  position: absolute;
-  top: 0;
-  left: 700px;
-  opacity: 0.9;
-}
-.cases a img {
-  transition: all 0.5s;
-  cursor: pointer;
-  border-radius: 0.4rem;
-}
-.cases a img:hover {
-  transform: translateY(-3%);
-}
-.cases-title {
+.cases-section {
   padding: 6rem 0rem;
 }
-.cases .case:first-child:hover,
-.cases .case:last-child:hover {
-  z-index: 2;
-  opacity: 1;
+.cases-title {
+  padding: 4rem 0rem;
 }
 
 .cases-section .github {
@@ -325,7 +274,7 @@ header li .btn-header {
 }
 .cases-section .github a {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: var(--white-color);
   transition: 0.2s all;
 }
@@ -335,11 +284,14 @@ header li .btn-header {
 }
 
 /* Contact Section =========* */
-
+.contact {
+  background: var(--semi-black);
+}
 .contact .container {
   display: flex;
   justify-content: space-around;
-  padding: 4rem 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .contact-title {
   flex: 1;
@@ -348,30 +300,34 @@ header li .btn-header {
   align-items: flex-start;
   justify-content: center;
 }
+.contact-title h2 {
+  max-width: 35rem;
+}
 .form-contact {
   flex: 1;
 }
 .contact .container p {
-  color: var(--black-color);
   background: var(--white-color);
-  padding: 1.4rem 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-weight: 300;
+  width: 20rem;
   border-radius: 5rem;
-  margin-top: 3rem;
+  padding: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 2rem;
 }
+
 .contact .input-group input,
 .contact .input-group textarea {
   padding: 1.8rem;
   width: 100%;
   margin-top: 5rem;
   border: none;
-  background: var(--semi-black);
+  background: var(--white-color);
   font-size: 1.6rem;
   transition: all 0.2s;
   border: 1px solid var(--semi-black);
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
+  color: var(--black-color);
 }
 
 .contact .input-button {
@@ -381,6 +337,7 @@ header li .btn-header {
 .contact .input-button button {
   background: var(--primary-color);
   border: none;
+  color: var(--black-color);
 }
 .input-group input:hover,
 .input-group textarea:hover {
@@ -390,7 +347,7 @@ header li .btn-header {
 /* Footer =========* */
 
 .footer {
-  background: var(--black-color-medium);
+  background: var(--black-color);
   text-align: center;
   padding: 5rem;
 }
@@ -402,4 +359,75 @@ header li .btn-header {
 
 .footer span {
   color: var(--primary-color);
+}
+
+/* Menu mobile =========* */
+#btnMobile {
+  visibility: hidden;
+}
+@media (max-width: 1200px) {
+  #menu {
+    display: none;
+  }
+
+  #nav.active #menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: var(--black-color);
+    left: 0;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    transition: all 0.4s;
+    overflow: hidden;
+  }
+
+  #btnMobile {
+    display: flex;
+    visibility: visible;
+    padding: 0.5rem 1rem;
+    z-index: 5000;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: var(--primary-color);
+  }
+  #hamburguer::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin-top: 5px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin-top: 4px;
+    transition: all 0.2s;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer:before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer:after {
+    transform: rotate(-135deg);
+    position: relative;
+    top: -6px;
+  }
 }

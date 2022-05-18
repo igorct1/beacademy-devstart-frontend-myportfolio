@@ -41,3 +41,29 @@ scrollReveal.reveal(
 .footer`,
   { interval: 100 }
 );
+
+const btnMobile = document.getElementById("btnMobile");
+
+function toggleMenu(event) {
+  if (event.type === "touchstart") {
+    event.preventDefault();
+  }
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+}
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);
+
+const carousel = document.querySelector(".js-carousel");
+
+new Glider(carousel, {
+  slidesToShow: 1.1,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: ".js-dots",
+  arrows: {
+    prev: ".js-button-prev",
+    next: ".js-button-next",
+  },
+  scrollLock: true,
+});
